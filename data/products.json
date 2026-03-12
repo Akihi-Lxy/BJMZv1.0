@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Premium Towel Series",
+    "description": "Premium quality materials, soft and comfortable",
+    "image": "images/cf03.jpg",
+    "createTime": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "name": "Bath Towel Series",
+    "description": "Highly absorbent and durable",
+    "image": "images/cf03 (1).jpg",
+    "createTime": "2024-01-01T00:00:00.000Z"
+  }
+]

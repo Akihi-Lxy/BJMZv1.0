@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Beijing Mengzhi Home Co.,Ltd. - Professional manufacturer of high-end towels and bath towels, providing OEM and ODM services">
+    <meta name="keywords" content="towel manufacturer,bath towel,OEM,ODM,custom towel,Beijing Mengzhi Home">
+    <title>Beijing Mengzhi Home Co.,Ltd. - Professional High-End Towel Manufacturer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-info">
+                <span><i class="fas fa-phone"></i> +86 17601607071</span>
+                <span><i class="fas fa-envelope"></i> 17601607071@163.com</span>
+                <span><i class="fas fa-map-marker-alt"></i> A650, 1F, No.47 Yuqiao North Lane, Tongzhou District, Beijing</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Beijing Mengzhi Home Co.,Ltd.">
+                </div>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner Slider -->
+    <section id="home" class="banner">
+        <div class="banner-slider">
+            <div class="banner-slide active" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                <div class="container">
+                    <div class="banner-content">
+                        <h1>Professional High-End Towel Manufacturer</h1>
+                        <p>Beijing Mengzhi Home Co.,Ltd.</p>
+                        <a href="#products" class="btn btn-primary">View Products</a>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-slide" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                <div class="container">
+                    <div class="banner-content">
+                        <h1>OEM/ODM Customization Services</h1>
+                        <p>Printing, Embroidery, Labels, Packaging and More</p>
+                        <a href="#services" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-slide" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                <div class="container">
+                    <div class="banner-content">
+                        <h1>Quality Assurance & Integrity First</h1>
+                        <p>Free Samples · Fast Delivery · Excellent Service</p>
+                        <a href="#contact" class="btn btn-primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+        </div>
+        <div class="banner-arrows">
+            <button class="arrow prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="arrow next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Us</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Beijing Mengzhi Home Co.,Ltd.</h3>
+                    <p class="lead">Professional Towel Wholesaler</p>
+                    <p>Beijing Mengzhi Home Co.,Ltd. mainly produces various high-end towels, bath towel series products. We can display your brand logo and customized patterns on towels through printing, embroidery, washing labels, and packaging.</p>
+                    <p>We support OEM and ODM services, free samples, fast express delivery, visualized production processes, a comprehensive after-sales service system, and competitive prices.</p>
+                    <p>Beijing Mengzhi Home Co.,Ltd. values credibility, abides by contracts, and ensures product quality, winning the trust of customers. The company fully follows customer needs, continuously innovates products and improves services. We look forward to a pleasant cooperation with you.</p>
+                </div>
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="images/cf2.jpg" alt="Our Products">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="products section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Products</h2>
+                <div class="section-line"></div>
+                <p>High-quality towel series to meet your various needs</p>
+            </div>
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3>OEM/ODM Services</h3>
+                    <p>Private label manufacturing and custom sample production to meet different customer needs</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Free Samples</h3>
+                    <p>Free samples provided so you can verify quality before placing orders</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Fast Delivery</h3>
+                    <p>Efficient logistics system ensures products reach customers quickly</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Visual Production</h3>
+                    <p>Transparent production process, track your order status anytime</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>After-Sales Support</h3>
+                    <p>Professional after-sales team to solve any issues promptly</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Competitive Pricing</h3>
+                    <p>Competitive pricing system to create greater value for you</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customization -->
+    <section class="customization">
+        <div class="container">
+            <div class="custom-content">
+                <h2>Customization Services</h2>
+                <p>Multiple customization options to make your brand unique</p>
+                <div class="custom-options">
+                    <div class="custom-item">
+                        <i class="fas fa-print"></i>
+                        <span>Printing</span>
+                    </div>
+                    <div class="custom-item">
+                        <i class="fas fa-paint-brush"></i>
+                        <span>Embroidery</span>
+                    </div>
+                    <div class="custom-item">
+                        <i class="fas fa-tag"></i>
+                        <span>Washing Labels</span>
+                    </div>
+                    <div class="custom-item">
+                        <i class="fas fa-box"></i>
+                        <span>Packaging</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <div class="section-line"></div>
+                <p>Looking forward to cooperating with you, feel free to contact us</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Address</h3>
+                        <p>A650, 1F, No.47 Yuqiao North Lane, Tongzhou District, Beijing, China</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Phone</h3>
+                        <p>+86 17601607071</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p>17601607071@163.com</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>Legal Representative</h3>
+                        <p>Zhang Mengqiang</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Email Address">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/logo.png" alt="Beijing Mengzhi Home">
+                    <p>Beijing Mengzhi Home Co.,Ltd.</p>
+                    <p class="small">Professional Towel Wholesaler</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +86 17601607071</p>
+                    <p><i class="fas fa-envelope"></i> 17601607071@163.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Beijing, China</p>
+                </div>
+                <div class="footer-qr">
+                    <h4>Company Info</h4>
+                    <p><i class="fas fa-certificate"></i> Credit Code</p>
+                    <p class="credit-code">91110112MADN22Q97H</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Beijing Mengzhi Home Co.,Ltd. All Rights Reserved</p>
+                <p>Credibility · Integrity · Quality</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        // 全局存储网站内容
+        let siteContent = {};
+        
+        // 加载网站内容配置
+        async function loadSiteContent() {
+            try {
+                const response = await fetch('/api/site-content');
+                const data = await response.json();
+                
+                if (data.success) {
+                    siteContent = data.content;
+                    applySiteContent();
+                }
+            } catch (error) {
+                console.log('Using default content configuration');
+            }
+        }
+        
+        // 应用网站内容
+        function applySiteContent() {
+            // 导航栏
+            const navLinks = document.querySelectorAll('.nav-menu a');
+            const navKeys = ['nav_home', 'nav_about', 'nav_products', 'nav_services', 'nav_contact'];
+            navLinks.forEach((link, index) => {
+                if (siteContent[navKeys[index]]) {
+                    link.textContent = siteContent[navKeys[index]];
+                }
+            });
+            
+            // 关于我们区域
+            const aboutTitle = document.querySelector('#about .section-header h2');
+            if (aboutTitle && siteContent.about_title) aboutTitle.textContent = siteContent.about_title;
+            
+            const aboutCompanyName = document.querySelector('.about-text h3');
+            if (aboutCompanyName && siteContent.about_company_name) aboutCompanyName.textContent = siteContent.about_company_name;
+            
+            const aboutSubtitle = document.querySelector('.about-text .lead');
+            if (aboutSubtitle && siteContent.about_subtitle) aboutSubtitle.textContent = siteContent.about_subtitle;
+            
+            const aboutParas = document.querySelectorAll('.about-text p:not(.lead)');
+            if (siteContent.about_para1 && aboutParas[0]) aboutParas[0].textContent = siteContent.about_para1;
+            if (siteContent.about_para2 && aboutParas[1]) aboutParas[1].textContent = siteContent.about_para2;
+            if (siteContent.about_para3 && aboutParas[2]) aboutParas[2].textContent = siteContent.about_para3;
+            
+            // 产品展示区域
+            const productsTitle = document.querySelector('#products .section-header h2');
+            if (productsTitle && siteContent.products_title) productsTitle.textContent = siteContent.products_title;
+            
+            const productsSubtitle = document.querySelector('#products .section-header p');
+            if (productsSubtitle && siteContent.products_subtitle) productsSubtitle.textContent = siteContent.products_subtitle;
+            
+            // 服务区域
+            const servicesTitle = document.querySelector('#services .section-header h2');
+            if (servicesTitle && siteContent.services_title) servicesTitle.textContent = siteContent.services_title;
+            
+            const serviceCards = document.querySelectorAll('.service-card');
+            const serviceTitles = ['service1_title', 'service2_title', 'service3_title', 'service4_title', 'service5_title', 'service6_title'];
+            const serviceDescs = ['service1_desc', 'service2_desc', 'service3_desc', 'service4_desc', 'service5_desc', 'service6_desc'];
+            
+            serviceCards.forEach((card, index) => {
+                if (siteContent[serviceTitles[index]]) {
+                    const h3 = card.querySelector('h3');
+                    if (h3) h3.textContent = siteContent[serviceTitles[index]];
+                }
+                if (siteContent[serviceDescs[index]]) {
+                    const p = card.querySelector('p');
+                    if (p) p.textContent = siteContent[serviceDescs[index]];
+                }
+            });
+            
+            // 定制服务区域
+            const customTitle = document.querySelector('.custom-content h2');
+            if (customTitle && siteContent.custom_title) customTitle.textContent = siteContent.custom_title;
+            
+            const customSubtitle = document.querySelector('.custom-content > p');
+            if (customSubtitle && siteContent.custom_subtitle) customSubtitle.textContent = siteContent.custom_subtitle;
+            
+            const customItems = document.querySelectorAll('.custom-item span');
+            if (siteContent.custom_printing && customItems[0]) customItems[0].textContent = siteContent.custom_printing;
+            if (siteContent.custom_embroidery && customItems[1]) customItems[1].textContent = siteContent.custom_embroidery;
+            if (siteContent.custom_labels && customItems[2]) customItems[2].textContent = siteContent.custom_labels;
+            if (siteContent.custom_packaging && customItems[3]) customItems[3].textContent = siteContent.custom_packaging;
+            
+            // 联系我们区域
+            const contactTitle = document.querySelector('#contact .section-header h2');
+            if (contactTitle && siteContent.contact_title) contactTitle.textContent = siteContent.contact_title;
+            
+            const contactSubtitle = document.querySelector('#contact .section-header p');
+            if (contactSubtitle && siteContent.contact_subtitle) contactSubtitle.textContent = siteContent.contact_subtitle;
+            
+            const contactCards = document.querySelectorAll('.contact-card p');
+            if (siteContent.contact_address_value && contactCards[0]) contactCards[0].textContent = siteContent.contact_address_value;
+            if (siteContent.contact_phone_value && contactCards[1]) contactCards[1].textContent = siteContent.contact_phone_value;
+            if (siteContent.contact_email_value && contactCards[2]) contactCards[2].textContent = siteContent.contact_email_value;
+            if (siteContent.contact_legal_value && contactCards[3]) contactCards[3].textContent = siteContent.contact_legal_value;
+            
+            // 联系表单
+            const formInputs = document.querySelectorAll('.contact-form input, .contact-form textarea');
+            if (siteContent.contact_form_name && formInputs[0]) formInputs[0].placeholder = siteContent.contact_form_name;
+            if (siteContent.contact_form_phone && formInputs[1]) formInputs[1].placeholder = siteContent.contact_form_phone;
+            if (siteContent.contact_form_email && formInputs[2]) formInputs[2].placeholder = siteContent.contact_form_email;
+            if (siteContent.contact_form_message && formInputs[3]) formInputs[3].placeholder = siteContent.contact_form_message;
+            
+            const submitBtn = document.querySelector('.contact-form button[type="submit"]');
+            if (submitBtn && siteContent.contact_form_submit) submitBtn.textContent = siteContent.contact_form_submit;
+            
+            // 页脚
+            const footerCompany = document.querySelector('.footer-brand p:not(.small)');
+            if (footerCompany && siteContent.footer_company) footerCompany.textContent = siteContent.footer_company;
+            
+            const footerTagline = document.querySelector('.footer-brand .small');
+            if (footerTagline && siteContent.footer_tagline) footerTagline.textContent = siteContent.footer_tagline;
+            
+            const footerCopyright = document.querySelector('.footer-bottom p:first-child');
+            if (footerCopyright && siteContent.footer_copyright) footerCopyright.textContent = siteContent.footer_copyright;
+            
+            const footerSlogan = document.querySelector('.footer-bottom p:last-child');
+            if (footerSlogan && siteContent.footer_slogan) footerSlogan.textContent = siteContent.footer_slogan;
+            
+            // 快速链接
+            const footerQuickLinks = document.querySelector('.footer-links h4');
+            if (footerQuickLinks && siteContent.footer_quick_links) footerQuickLinks.textContent = siteContent.footer_quick_links;
+            
+            const footerContactInfo = document.querySelector('.footer-contact h4');
+            if (footerContactInfo && siteContent.footer_contact_info) footerContactInfo.textContent = siteContent.footer_contact_info;
+            
+            // 信用代码
+            const footerCreditLabel = document.querySelector('.footer-qr p');
+            if (footerCreditLabel && siteContent.footer_credit_label) footerCreditLabel.textContent = siteContent.footer_credit_label;
+            
+            const footerCreditCode = document.querySelector('.footer-qr .credit-code');
+            if (footerCreditCode && siteContent.about_credit_value) footerCreditCode.textContent = siteContent.about_credit_value;
+        }
+        
+        // Load site images configuration
+        async function loadSiteImages() {
+            try {
+                const response = await fetch('/api/site-images');
+                const data = await response.json();
+                
+                if (data.success) {
+                    const images = data.images;
+                    
+                    // Update Logo
+                    if (images.logo) {
+                        document.querySelectorAll('.logo img, .footer-brand img').forEach(img => {
+                            img.src = images.logo;
+                        });
+                    }
+                    
+                    // Update About Us image
+                    if (images.about_image) {
+                        const aboutImage = document.querySelector('.about-image img');
+                        if (aboutImage) {
+                            aboutImage.src = images.about_image;
+                        }
+                    }
+                    
+                    // Update Banner slider
+                    if (images.banners && images.banners.length > 0) {
+                        updateBanners(images.banners);
+                    }
+                }
+            } catch (error) {
+                console.log('Using default image configuration');
+            }
+        }
+        
+        // Update Banner slider
+        function updateBanners(banners) {
+            const slider = document.querySelector('.banner-slider');
+            const dots = document.querySelector('.banner-dots');
+            
+            if (!slider || !dots) return;
+            
+            // Update Banner slides
+            const slides = slider.querySelectorAll('.banner-slide');
+            banners.forEach((banner, index) => {
+                if (slides[index]) {
+                    const slide = slides[index];
+                    
+                    // Set background
+                    if (banner.image) {
+                        slide.style.backgroundImage = `url(${banner.image})`;
+                        slide.style.backgroundSize = 'cover';
+                        slide.style.backgroundPosition = 'center';
+                    } else {
+                        slide.style.background = banner.background;
+                    }
+                    
+                    // Update content
+                    const content = slide.querySelector('.banner-content');
+                    if (content) {
+                        const h1 = content.querySelector('h1');
+                        const p = content.querySelector('p');
+                        const a = content.querySelector('a');
+                        
+                        if (h1) h1.textContent = banner.title;
+                        if (p) p.textContent = banner.subtitle;
+                        if (a) {
+                            a.textContent = banner.buttonText;
+                            a.href = banner.buttonLink;
+                        }
+                    }
+                }
+            });
+        }
+        
+        // Dynamically load product list
+        async function loadProducts() {
+            try {
+                const response = await fetch('/api/products');
+                const data = await response.json();
+                
+                if (data.success && data.products.length > 0) {
+                    const productsGrid = document.getElementById('productsGrid');
+                    let html = data.products.map(product => `
+                        <div class="product-card" onclick="window.location.href='product.html?id=${product.id}'" style="cursor: pointer;">
+                            <div class="product-image">
+                                <img src="${product.image}" alt="${product.name}" onerror="this.src='images/cf2.jpg'">
+                                <div class="product-overlay">
+                                    <span class="view-btn"><i class="fas fa-search-plus"></i></span>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>${product.name}</h3>
+                                <p>${product.description}</p>
+                            </div>
+                        </div>
+                    `).join('');
+                    
+                    // Add "Other Series" card
+                    html += `
+                        <div class="product-card product-card-other" onclick="window.location.href='other-products.html'" style="cursor: pointer;">
+                            <div class="product-image" style="background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%); display: flex; align-items: center; justify-content: center;">
+                                <div style="text-align: center; color: #999;">
+                                    <i class="fas fa-box-open" style="font-size: 60px; margin-bottom: 15px; opacity: 0.5;"></i>
+                                    <p style="font-size: 14px;">Coming Soon</p>
+                                </div>
+                                <div class="product-overlay">
+                                    <span class="view-btn"><i class="fas fa-arrow-right"></i></span>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Other Series</h3>
+                                <p>More products coming soon</p>
+                            </div>
+                        </div>
+                    `;
+                    
+                    productsGrid.innerHTML = html;
+                    
+                    // Reinitialize animation observer
+                    initProductAnimations();
+                }
+            } catch (error) {
+                console.log('Using default product display');
+                // If server is not running, use default products
+                const productsGrid = document.getElementById('productsGrid');
+                productsGrid.innerHTML = `
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/cf03.jpg" alt="Premium Towel Series">
+                            <div class="product-overlay">
+                                <span class="view-btn"><i class="fas fa-search-plus"></i></span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Premium Towel Series</h3>
+                            <p>Premium quality materials, soft and comfortable</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/cf03 (1).jpg" alt="Bath Towel Series">
+                            <div class="product-overlay">
+                                <span class="view-btn"><i class="fas fa-search-plus"></i></span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Bath Towel Series</h3>
+                            <p>Highly absorbent and durable</p>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/cf2.jpg" alt="Custom Towels">
+                            <div class="product-overlay">
+                                <span class="view-btn"><i class="fas fa-search-plus"></i></span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Custom Towels</h3>
+                            <p>OEM/ODM customization services available</p>
+                        </div>
+                    </div>
+                    <div class="product-card product-card-other" onclick="window.location.href='other-products.html'" style="cursor: pointer;">
+                        <div class="product-image" style="background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%); display: flex; align-items: center; justify-content: center;">
+                            <div style="text-align: center; color: #999;">
+                                <i class="fas fa-box-open" style="font-size: 60px; margin-bottom: 15px; opacity: 0.5;"></i>
+                                <p style="font-size: 14px;">Coming Soon</p>
+                            </div>
+                            <div class="product-overlay">
+                                <span class="view-btn"><i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Other Series</h3>
+                            <p>More products coming soon</p>
+                        </div>
+                    </div>
+                `;
+            }
+        }
+        
+        function initProductAnimations() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+            
+            const productCards = document.querySelectorAll('.product-card');
+            productCards.forEach((el, index) => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+                observer.observe(el);
+            });
+        }
+        
+        // Load configuration after page load
+        document.addEventListener('DOMContentLoaded', function() {
+            loadSiteContent();
+            loadSiteImages();
+            loadProducts();
+            
+            // 联系表单提交
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', async function(e) {
+                    e.preventDefault();
+                    
+                    const formData = new FormData(contactForm);
+                    const data = {
+                        name: formData.get('name'),
+                        phone: formData.get('phone'),
+                        email: formData.get('email'),
+                        message: formData.get('message')
+                    };
+                    
+                    const submitBtn = contactForm.querySelector('button[type="submit"]');
+                    const originalText = submitBtn.textContent;
+                    submitBtn.disabled = true;
+                    submitBtn.textContent = 'Sending...';
+                    
+                    try {
+                        const response = await fetch('/api/messages', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify(data)
+                        });
+                        
+                        const result = await response.json();
+                        
+                        if (result.success) {
+                            alert('Message sent successfully! We will contact you soon.');
+                            contactForm.reset();
+                        } else {
+                            alert(result.message || 'Failed to send message, please try again.');
+                        }
+                    } catch (error) {
+                        console.error('Submit error:', error);
+                        alert('Network error, please check if the server is running and try again later.');
+                    }
+                    
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = originalText;
+                });
+            }
+        });
+    </script>
+</body>
+</html>

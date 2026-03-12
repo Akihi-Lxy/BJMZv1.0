@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Other Product Series - Beijing Mengzhi Home Co.,Ltd.">
+    <title>Other Product Series - Beijing Mengzhi Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .other-products-page {
+            padding: 80px 0;
+            min-height: calc(100vh - 400px);
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .page-header h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .page-header p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .coming-soon {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 20px;
+            margin-bottom: 40px;
+        }
+
+        .coming-soon-icon {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(102, 126, 234, 0.4);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 20px rgba(102, 126, 234, 0);
+            }
+        }
+
+        .coming-soon-icon i {
+            font-size: 50px;
+            color: #fff;
+        }
+
+        .coming-soon h2 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .coming-soon p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 30px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .notify-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 35px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            border-radius: 30px;
+            font-size: 16px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .notify-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+
+        .categories-preview {
+            margin-top: 60px;
+        }
+
+        .categories-preview h3 {
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .category-list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .category-item {
+            background: #fff;
+            border-radius: 15px;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .category-item::before {
+            content: 'Coming Soon';
+            position: absolute;
+            top: 15px;
+            right: -30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            font-size: 12px;
+            padding: 5px 40px;
+            transform: rotate(45deg);
+        }
+
+        .category-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .category-icon {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 20px;
+            background: #f8f9fa;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .category-icon i {
+            font-size: 30px;
+            color: #667eea;
+        }
+
+        .category-item h4 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .category-item p {
+            font-size: 14px;
+            color: #999;
+        }
+
+        .back-link {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .back-link a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #667eea;
+            text-decoration: none;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .back-link a:hover {
+            color: #764ba2;
+        }
+
+        @media (max-width: 992px) {
+            .category-list {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 576px) {
+            .category-list {
+                grid-template-columns: 1fr;
+            }
+
+            .coming-soon h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-info">
+                <span><i class="fas fa-phone"></i> +86 17601607071</span>
+                <span><i class="fas fa-envelope"></i> 17601607071@163.com</span>
+                <span><i class="fas fa-map-marker-alt"></i> A650, 1F, No.47 Yuqiao North Lane, Tongzhou District, Beijing</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Beijing Mengzhi Home Co.,Ltd.">
+                </div>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#products" class="active">Products</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Other Products Page -->
+    <section class="other-products-page">
+        <div class="container">
+            <div class="page-header">
+                <h1><i class="fas fa-box-open"></i> Other Product Series</h1>
+                <p>Beijing Mengzhi Home · More Quality Products Coming Soon</p>
+            </div>
+
+            <!-- Coming Soon Section -->
+            <div class="coming-soon">
+                <div class="coming-soon-icon">
+                    <i class="fas fa-hourglass-half"></i>
+                </div>
+                <h2>New Products Coming Soon</h2>
+                <p>We are preparing more quality product series, including bedding, curtains, carpets and other home textiles. Stay tuned!</p>
+                <a href="index.html#contact" class="notify-btn">
+                    <i class="fas fa-bell"></i> Notify Me When Available
+                </a>
+            </div>
+
+            <!-- Upcoming Categories -->
+            <div class="categories-preview">
+                <h3>Upcoming Product Series</h3>
+                <div class="category-list">
+                    <div class="category-item">
+                        <div class="category-icon">
+                            <i class="fas fa-bed"></i>
+                        </div>
+                        <h4>Bedding Sets</h4>
+                        <p>Bedsheets, Duvet Covers, Pillowcases</p>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-icon">
+                            <i class="fas fa-border-all"></i>
+                        </div>
+                        <h4>Curtain Series</h4>
+                        <p>Blackout Curtains, Decorative Curtains</p>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-icon">
+                            <i class="fas fa-th-large"></i>
+                        </div>
+                        <h4>Carpets & Rugs</h4>
+                        <p>Living Room Rugs, Bathroom Mats</p>
+                    </div>
+                    <div class="category-item">
+                        <div class="category-icon">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <h4>Home Apparel</h4>
+                        <p>Bathrobes, Pajama Series</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Back Link -->
+            <div class="back-link">
+                <a href="index.html#products">
+                    <i class="fas fa-arrow-left"></i> Back to Products
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/logo.png" alt="Beijing Mengzhi Home">
+                    <p>Beijing Mengzhi Home Co.,Ltd.</p>
+                    <p class="small">Professional Towel Wholesaler</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="index.html#products">Products</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +86 17601607071</p>
+                    <p><i class="fas fa-envelope"></i> 17601607071@163.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Beijing, China</p>
+                </div>
+                <div class="footer-qr">
+                    <h4>Company Info</h4>
+                    <p><i class="fas fa-certificate"></i> Credit Code</p>
+                    <p class="credit-code">91110112MADN22Q97H</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Beijing Mengzhi Home Co.,Ltd. All Rights Reserved</p>
+                <p>Credibility · Integrity · Quality</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        // 加载网站内容
+        async function loadSiteContent() {
+            try {
+                const response = await fetch('/api/site-content');
+                const data = await response.json();
+                
+                if (data.success) {
+                    const content = data.content;
+                    
+                    // 页面标题
+                    const pageTitle = document.querySelector('.page-header h1');
+                    if (pageTitle && content.other_page_title) {
+                        pageTitle.innerHTML = `<i class="fas fa-box-open"></i> ${content.other_page_title}`;
+                    }
+                    
+                    // 页面副标题
+                    const pageSubtitle = document.querySelector('.page-header p');
+                    if (pageSubtitle && content.other_page_subtitle) {
+                        pageSubtitle.textContent = content.other_page_subtitle;
+                    }
+                    
+                    // 即将上线标题
+                    const comingTitle = document.querySelector('.coming-soon h2');
+                    if (comingTitle && content.other_coming_title) {
+                        comingTitle.textContent = content.other_coming_title;
+                    }
+                    
+                    // 即将上线描述
+                    const comingDesc = document.querySelector('.coming-soon > p');
+                    if (comingDesc && content.other_coming_desc) {
+                        comingDesc.textContent = content.other_coming_desc;
+                    }
+                    
+                    // 通知按钮
+                    const notifyBtn = document.querySelector('.notify-btn');
+                    if (notifyBtn && content.other_notify_btn) {
+                        notifyBtn.innerHTML = `<i class="fas fa-bell"></i> ${content.other_notify_btn}`;
+                    }
+                    
+                    // 即将上线产品系列标题
+                    const upcomingTitle = document.querySelector('.categories-preview h3');
+                    if (upcomingTitle && content.other_upcoming_title) {
+                        upcomingTitle.textContent = content.other_upcoming_title;
+                    }
+                    
+                    // 产品分类
+                    const categoryItems = document.querySelectorAll('.category-item');
+                    const catNames = ['other_cat1_name', 'other_cat2_name', 'other_cat3_name', 'other_cat4_name'];
+                    const catDescs = ['other_cat1_desc', 'other_cat2_desc', 'other_cat3_desc', 'other_cat4_desc'];
+                    
+                    categoryItems.forEach((item, index) => {
+                        if (content[catNames[index]]) {
+                            const h4 = item.querySelector('h4');
+                            if (h4) h4.textContent = content[catNames[index]];
+                        }
+                        if (content[catDescs[index]]) {
+                            const p = item.querySelector('p');
+                            if (p) p.textContent = content[catDescs[index]];
+                        }
+                    });
+                    
+                    // 返回链接
+                    const backLink = document.querySelector('.back-link a');
+                    if (backLink && content.other_back_link) {
+                        backLink.innerHTML = `<i class="fas fa-arrow-left"></i> ${content.other_back_link}`;
+                    }
+                }
+            } catch (error) {
+                console.log('Using default content');
+            }
+        }
+        
+        // 加载Logo
+        async function loadSiteImages() {
+            try {
+                const response = await fetch('/api/site-images');
+                const data = await response.json();
+                
+                if (data.success && data.images.logo) {
+                    document.querySelectorAll('.logo img, .footer-brand img').forEach(img => {
+                        img.src = data.images.logo;
+                    });
+                }
+            } catch (error) {
+                console.log('Using default images');
+            }
+        }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            loadSiteContent();
+            loadSiteImages();
+        });
+    </script>
+</body>
+</html>

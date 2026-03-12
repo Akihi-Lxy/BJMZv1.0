@@ -1,0 +1,33 @@
+{
+  "logo": "uploads/logo-20260312113434-e67b4c29-23a0-4cc4-854c-7526fd001f80.png",
+  "about_image": "images/cf2.jpg",
+  "banners": [
+    {
+      "id": 1,
+      "title": "Professional High-End Towel Manufacturer",
+      "subtitle": "Beijing Mengzhi Home Co.,Ltd.",
+      "buttonText": "View Products",
+      "buttonLink": "#products",
+      "background": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+      "image": ""
+    },
+    {
+      "id": 2,
+      "title": "OEM/ODM Customization Services",
+      "subtitle": "Printing, Embroidery, Labels, Packaging and More",
+      "buttonText": "Learn More",
+      "buttonLink": "#services",
+      "background": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "image": ""
+    },
+    {
+      "id": 3,
+      "title": "Quality Assurance & Integrity First",
+      "subtitle": "Free Samples · Fast Delivery · Excellent Service",
+      "buttonText": "Contact Us",
+      "buttonLink": "#contact",
+      "background": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "image": ""
+    }
+  ]
+}

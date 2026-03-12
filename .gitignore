@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# 数据文件（可选，如果想保留数据可以注释掉）
+# data/*.json
+
+# 上传文件
+uploads/*
+!uploads/.gitkeep
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 日志
+*.log
+
+# 环境变量
+.env
+.env.local
+
+# 临时文件
+*.tmp
+*.temp
+
