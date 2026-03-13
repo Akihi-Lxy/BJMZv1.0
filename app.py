@@ -303,8 +303,11 @@ def index():
 @app.route('/<path:filename>')
 def serve_static(filename):
     """静态文件服务"""
+    # uploads 文件由专门的 serve_uploads 路由处理
     if filename.startswith('uploads/'):
-        return send_from_directory('.', filename)
+        # 提取 uploads/ 后的文件名
+        upload_filename = filename.replace('uploads/', '', 1)
+        return send_from_directory(app.config['UPLOAD_FOLDER'], upload_filename)
     if filename.endswith('.html') or filename.endswith('.css') or filename.endswith('.js'):
         return send_from_directory('.', filename)
     return send_from_directory('.', filename)
